@@ -21,7 +21,7 @@ public class MyUserService implements UserDetailsService {
         Users user = repository.findByUsername(username.toLowerCase(Locale.ROOT));
         if (user == null){
          throw new  UsernameNotFoundException("user 404");
-
+        System.out.println("Edited in Develop");
         }
         System.out.println("username test "+username);
         System.out.println(user);
